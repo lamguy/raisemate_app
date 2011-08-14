@@ -1,5 +1,7 @@
 RaisemeApp::Application.routes.draw do
   resources :users
+  
+  get "signup" => "users#new", :as => "singup"
 
   get "home/index"
 

@@ -10,18 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110814031736) do
+ActiveRecord::Schema.define(:version => 20110814232417) do
 
   create_table "users", :force => true do |t|
-    t.string   "user_login",      :limit => 50
-    t.string   "user_password",   :limit => 64
-    t.string   "user_name",       :limit => 250
-    t.string   "user_email",      :limit => 100
+    t.string   "user_login",         :limit => 50
+    t.string   "user_password_hash", :limit => 64
+    t.string   "user_name",          :limit => 250
+    t.string   "user_email",         :limit => 100
     t.string   "user_key"
     t.integer  "user_plan"
-    t.datetime "user_registered"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "user_password_salt", :limit => 64
   end
 
 end

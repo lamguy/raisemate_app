@@ -7,6 +7,8 @@ gem 'rails', '3.0.9'
 
 gem 'mysql2', '< 0.3'
 
+gem "bcrypt-ruby", :require => "bcrypt"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
