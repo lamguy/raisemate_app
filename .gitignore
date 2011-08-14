@@ -8,4 +8,5 @@ doc/api
 doc/app
 *.swp
 *~
+raiseme_app.tmproj
 .DS_Store
